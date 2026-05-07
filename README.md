@@ -1,5 +1,25 @@
 # Telco Project
 
+## Project Summary
+
+This project uses Oracle XE running in Docker, DBeaver for database access, and SQL scripts to analyze telecom customer, tariff, monthly usage, and payment data.
+
+## Project Files
+
+- `TABLE_CREATION_SCRIPTS.sql`: Creates the Oracle tables, constraints, and indexes.
+- `SOLUTIONS.sql`: Contains all SQL query answers with explanations.
+- `CUSTOMERS.csv`: Customer dataset.
+- `TARIFFS.csv`: Tariff/package dataset.
+- `MONTHLY_STATS.csv`: Monthly usage and payment dataset.
+- `docker-compose.yml`: Starts the Oracle XE database container.
+
+## How to Run This Project
+
+### 1. Start Oracle XE
+
+```bash
+docker compose up -d
+
 ## How to Set Up Your Repository
 
 **WARNING**: This is a template project. Do not fork this repository.
