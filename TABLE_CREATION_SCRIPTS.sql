@@ -5,7 +5,10 @@
    ============================================================ */
 
 /*
-/* Drop tables first so the script can be re-run safely during testing. */
+Optional cleanup commands.
+
+Run these manually only if the tables already exist:
+
 DROP TABLE MONTHLY_STATS CASCADE CONSTRAINTS;
 DROP TABLE CUSTOMERS CASCADE CONSTRAINTS;
 DROP TABLE TARIFFS CASCADE CONSTRAINTS;
