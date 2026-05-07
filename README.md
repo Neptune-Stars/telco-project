@@ -15,10 +15,58 @@ This project uses Oracle XE running in Docker, DBeaver for database access, and 
 
 ### How to Run This Project
 
-## 1. Start Oracle XE
+## How to Run This Project
 
-"```bash
-docker compose up -d"
+### 1. Start Oracle XE
+
+Run `docker compose up -d`.
+
+### 2. Check the Container
+
+Run `docker compose ps`.
+
+### 3. View Oracle Logs
+
+Run `docker logs -f telco-oracle-xe`.
+
+Wait until the logs show that the database is ready.
+
+### 4. Connect with DBeaver
+
+Use these settings:
+
+- Database: Oracle
+- Host: `localhost`
+- Port: `1521`
+- Service name: `XEPDB1`
+- Username: `telco`
+- Password: `Telco123`
+
+### 5. Create Tables
+
+Run `TABLE_CREATION_SCRIPTS.sql`.
+
+### 6. Import CSV Files
+
+Import the CSV files in this order:
+
+1. `TARIFFS.csv`
+2. `CUSTOMERS.csv`
+3. `MONTHLY_STATS.csv`
+
+### 7. Expected Row Counts
+
+After importing, these are the expected counts:
+
+- `TARIFFS`: 4
+- `CUSTOMERS`: 10000
+- `MONTHLY_STATS`: 9950
+
+### 8. Run the Solutions
+
+Run `SOLUTIONS.sql`.
+
+Each query includes comments explaining the approach.
 
 ## Screenshots
 
