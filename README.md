@@ -20,6 +20,17 @@ This project uses Oracle XE running in Docker, DBeaver for database access, and 
 ```bash
 docker compose up -d
 
+## Screenshots
+
+The `screenshots/` folder includes evidence of:
+
+- Docker Compose Oracle XE setup
+- Oracle database readiness
+- DBeaver connection and created tables
+- Successful CSV import row counts
+- Missing monthly records validation
+- Sample SQL solution output
+
 ## How to Set Up Your Repository
 
 **WARNING**: This is a template project. Do not fork this repository.
