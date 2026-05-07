@@ -13,8 +13,6 @@ This project uses Oracle XE running in Docker, DBeaver for database access, and 
 - `MONTHLY_STATS.csv`: Monthly usage and payment dataset.
 - `docker-compose.yml`: Starts the Oracle XE database container.
 
-### How to Run This Project
-
 ## How to Run This Project
 
 ### 1. Start Oracle XE
